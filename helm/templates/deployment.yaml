@@ -20,7 +20,7 @@ spec:
               protocol: TCP
           readinessProbe:
             httpGet:
-              path: /health
+              path: /health?token=jessica
               port: 80
             initialDelaySeconds: 10
             periodSeconds: 10
@@ -28,7 +28,7 @@ spec:
             failureThreshold: 3
           livenessProbe:
             httpGet:
-              path: /health
+              path: /health?token=jessica
               port: 80
             initialDelaySeconds: 10
             periodSeconds: 10
