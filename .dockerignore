@@ -1,0 +1,8 @@
+.venv
+.git
+.gitignore
+.github
+.vscode
+helm/*
+Dockerfile
+.dockerignore
